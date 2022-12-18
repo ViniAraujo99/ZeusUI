@@ -26,7 +26,7 @@
 
 .header__menu {
     padding: 1rem;
-    background: url("/src/img/menu.png") no-repeat center center;
+    background: url("../img/menu.png") no-repeat center center;
     background-size: 2rem;
     width: 24px;
     height: 24px;
@@ -84,31 +84,31 @@
         background-size: 24px;
         padding: 2rem;
     }
-    
+
     .navbar__item:nth-child(2) {
         background: url('../img/presentation.png') no-repeat top center;
         background-size: 24px;
         padding: 2rem;
     }
-    
+
     .navbar__item:nth-child(3) {
         background: url('../img/e-book.png') no-repeat top center;
         background-size: 24px;
         padding: 2rem;
     }
-    
+
     .navbar__item:nth-child(4) {
         background: url('../img/human-brain.png') no-repeat top center;
         background-size: 24px;
         padding: 2rem;
     }
-    
+
     .navbar__item:nth-child(5) {
         background: url('../img/check-list.png') no-repeat top center;
         background-size: 24px;
         padding: 2rem;
     }
-    
+
     .navbar__item:nth-child(6) {
         background: url('../img/solution.png') no-repeat top center;
         background-size: 24px;
@@ -117,8 +117,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
-    .header__menu, .header__nav {
+
+    .header__menu,
+    .header__nav {
         display: none;
     }
 
