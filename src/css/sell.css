@@ -1,0 +1,48 @@
+.sell {
+    margin-bottom: 5rem;
+}
+
+.sell__container {
+    background: var(--sc-pink);
+    border: 1px solid var(--lt-pink);
+    border-radius: 40px;
+    padding: 2rem 0;
+}
+
+.main__title-sell {
+    font-family: var(--sec-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    width: 70%;
+}
+
+.sell__link {
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--white);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    background: var(--purple);
+}
+
+
+@media screen and (min-width: 768px) {
+    .sell__container {
+        padding: 3rem 0;
+        background: url("../img/bg-sell-md.png") no-repeat center center, var(--sc-pink);
+        background-size: cover;
+    }
+
+    .main__title-sell {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sell__container {
+        padding: 6rem 0;
+        background: url("../img/bg-sell-lg.png") no-repeat center center, var(--sc-pink);
+        background-size: cover;
+    }
+}

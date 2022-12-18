@@ -1,0 +1,40 @@
+.sponsors {
+    margin-bottom: 5rem;
+}
+
+.sponsors__container {
+    width: 95%;
+    margin: 0 auto;
+    font-family: var(--sec-font);
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(3, auto);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.sponsors__img {
+    width: 100%;
+    max-width: 110px;
+    min-width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .sponsors__container {
+        padding: 2rem 6rem;
+    }
+
+    .sponsors__img {
+        max-width: 135px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sponsors__container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sponsors__img {
+        max-width: 150px;
+    }
+}

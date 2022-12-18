@@ -1,0 +1,164 @@
+.header {
+    display: flex;
+    height: 7.5vh;
+    padding: 2rem 0;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.header__container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header__brand-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0px;
+}
+
+.header__input {
+    display: none;
+}
+
+.header__menu {
+    padding: 1rem;
+    background: url("/src/img/menu.png") no-repeat center center;
+    background-size: 2rem;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    transition: all 1s ease-out;
+}
+
+.header__input:checked~.header__label>.header__menu {
+    background: url("/src/img/marca.png") no-repeat center center;
+    background-size: 1.75rem;
+}
+
+.header__nav {
+    min-width: 100%;
+    display: inline-block;
+    height: calc(100vh - 100%);
+    position: absolute;
+    top: 100%;
+    left: -100vw;
+    background: var(--black);
+
+    transition: all 1s ease-in-out;
+}
+
+.header__nav-lg {
+    display: none;
+}
+
+.header__input:checked~.header__nav {
+    left: 0;
+}
+
+.header__navbar {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar__link {
+    color: var(--white);
+    opacity: 0.5;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar__item:nth-child(1) {
+        background: url('../img/pet-house.png') no-repeat top center;
+        background-size: 24px;
+        padding: 2rem;
+    }
+    
+    .navbar__item:nth-child(2) {
+        background: url('../img/presentation.png') no-repeat top center;
+        background-size: 24px;
+        padding: 2rem;
+    }
+    
+    .navbar__item:nth-child(3) {
+        background: url('../img/e-book.png') no-repeat top center;
+        background-size: 24px;
+        padding: 2rem;
+    }
+    
+    .navbar__item:nth-child(4) {
+        background: url('../img/human-brain.png') no-repeat top center;
+        background-size: 24px;
+        padding: 2rem;
+    }
+    
+    .navbar__item:nth-child(5) {
+        background: url('../img/check-list.png') no-repeat top center;
+        background-size: 24px;
+        padding: 2rem;
+    }
+    
+    .navbar__item:nth-child(6) {
+        background: url('../img/solution.png') no-repeat top center;
+        background-size: 24px;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .header__menu, .header__nav {
+        display: none;
+    }
+
+
+    .header__nav-lg {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header__navbar-lg {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .header__navbar-lg2 {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        white-space: nowrap;
+    }
+
+    .navbar__item-lg {
+        padding: 1rem 2rem 1rem 0;
+    }
+
+    .navbar__item-lg2 {
+        padding: 1rem 0 1rem 2rem;
+    }
+
+    .navbar__link-lg {
+        font-family: var(--font);
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--gray);
+    }
+
+    .navbar__link {
+        color: var(--gray);
+    }
+}
