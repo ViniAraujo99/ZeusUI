@@ -6,7 +6,7 @@
     width: 95%;
     margin: 0 auto;
     font-family: var(--sec-font);
-    display: grid;
+    display: grid !important;
     grid-template: repeat(2, 1fr)/ repeat(3, auto);
     gap: 1rem;
     justify-items: center;
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 1440px) {
     .sponsors__container {
-        display: flex;
+        display: flex !important;
         justify-content: space-around;
     }
 
