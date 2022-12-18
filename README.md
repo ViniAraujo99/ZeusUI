@@ -1,6 +1,6 @@
 # ZeusUI
 
-Prática de HTML e CSS Grid e Flex baseado no projeto do @moses
+Prática de HTML e CSS Grid e Flex baseado no projeto do @templates
 
 Designer: https://www.figma.com/@templates  
 
