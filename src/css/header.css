@@ -39,7 +39,7 @@
 }
 
 .header__input:checked~.header__label>.header__menu {
-    background: url("/src/img/marca.png") no-repeat center center;
+    background: url("../img/marca.png") no-repeat center center;
     background-size: 1.75rem;
 }
 
